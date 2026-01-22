@@ -185,5 +185,5 @@ streamlit run timefold.py
 ## 📄 License
 MIT License
 
-Developed with by [Burak / TIMEFOLD Team]
-Developed with by [Ali Toprak / TIMEFOLD Team]
+* Developed with by [Burak / TIMEFOLD Team]
+* Developed with by [Ali Toprak / TIMEFOLD Team]
