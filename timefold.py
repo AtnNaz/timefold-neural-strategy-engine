@@ -83,7 +83,7 @@ class SimulationOutput(BaseModel):
 
 def recruit_agents(context, image_part=None):
     model = genai.GenerativeModel(
-        model_name='gemini-2.5-flash', 
+        model_name='gemini-3-pro-preview', 
         generation_config={"response_mime_type": "application/json", "response_schema": Council}
     )
     prompt = f"MISSION: Recruit 3 distinct strategic experts to analyze: {context}. RULES: No honorifics. Diverse perspectives."
@@ -97,7 +97,7 @@ def recruit_agents(context, image_part=None):
 
 def run_simulation(context, agents, image_part=None, inject_chaos=False):
     model = genai.GenerativeModel(
-        model_name='gemini-2.5-flash',
+        model_name='gemini-3-pro-preview',
         generation_config={"response_mime_type": "application/json", "response_schema": SimulationOutput}
     )
     
@@ -188,7 +188,7 @@ if 'agents' not in st.session_state: st.session_state.agents = None
 if 'simulation' not in st.session_state: st.session_state.simulation = None
 
 st.title("TIMEFOLD")
-st.caption("Multimodal Strategic Foresight Engine | Powered by Gemini")
+st.caption("Multimodal Strategic Foresight Engine | Powered by Gemini 3 Preview")
 
 if st.session_state.stage == 'INPUT':
     st.markdown("### Initialize Simulation")

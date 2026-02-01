@@ -38,7 +38,7 @@ Don’t just tell — **show**.
   Upload stock charts, geopolitical maps, or supply chain diagrams.
 
 - **Image-to-Simulation**  
-  Gemini 2.5 analyzes visual inputs and injects them directly into the causal simulation logic.
+  Gemini 3  analyzes visual inputs and injects them directly into the causal simulation logic.
 
 ---
 
@@ -91,7 +91,7 @@ TIMEFOLD is built on a **modular reasoning pipeline**:
 - Image uploads (processed via **Pillow**)
 
 ### 🔹 Orchestration Layer
-- Gemini 2.5 Flash analyzes context
+- Gemini 3 analyzes context
 - Generates JSON-based **Agent Profiles**
 
 ### 🔹 Simulation Layer
@@ -107,7 +107,7 @@ TIMEFOLD is built on a **modular reasoning pipeline**:
 
 ## 🧰 Tech Stack
 
-- **LLM:** Google Gemini 2.5 Flash (`google-generativeai`)
+- **LLM:** Google Gemini 3 (`google-generativeai`)
 - **Frontend / Backend:** Streamlit
 - **Data Validation:** Pydantic
 - **Graph Rendering:** Graphviz
